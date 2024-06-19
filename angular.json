@@ -27,7 +27,10 @@
               }
             ],
             "styles": [
+              "node_modules/@syncfusion/ej2-base/styles/material.css",
+              "node_modules/@syncfusion/ej2-angular-layouts/styles/material.css",
               "src/styles.css"
+              
             ],
             "scripts": []
           },

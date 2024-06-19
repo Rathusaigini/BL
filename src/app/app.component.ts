@@ -1,13 +1,23 @@
+import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { ChartModule} from '@syncfusion/ej2-angular-charts'
+
+
+
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+imports: [
+         ChartModule
+    ],
+
+standalone: true,
+    selector: 'app-container',
+    // specifies the template string for the Chart component
+    template: `<ejs-chart id="chart-container"></ejs-chart>`
 })
 export class AppComponent {
-  title = 'db';
+
 }
+
+
